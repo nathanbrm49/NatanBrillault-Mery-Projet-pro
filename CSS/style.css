@@ -1,0 +1,61 @@
+body {
+    /*background-color: darkgrey }*/
+
+    background-color: blue;
+}
+#pid {
+    color: black;
+}
+p{
+    color: black;
+}
+ul {
+    margin-left: 50px;
+    /*background-color: yellow;*/
+}
+
+div{
+    color: white; /*Textes des éléments dans les divs blancs par héritage*/
+    background-color: purple; /* Les div auront un fond violet*/
+    width: 80%; /* Définit la largeur des div à 80% de leurs parents (body ici)*/
+     margin: 0 auto; /* Permet de centrer les div dans leur élément parent (body ici)*/
+     text-align: center;
+     display: block
+}
+span{
+    front-weight : bold; /* Les textes seront en gras */
+    background-color: yellow; /* Fond des span jaune */
+    color: black; /* Couleur du texte noire */
+
+}
+font-family : 'Source Code Pro', monospace ;
+
+body{
+    font font-family: "source code pro", Verdana, sans-serif;
+    font-size : 12px
+  }
+    /*déclaration de l'apparence des textes des paragraphes*/
+    /* valeur absolue : xx-small, x-smal ...*/
+    #p1{
+        front-size: small;
+    }
+/*valeur relative: largeur, smaller*/
+#p2{
+    front-size: lagrer;
+}
+#p3{
+    front-size: 0.5em;
+}
+/* valeur proportionelle*/
+#p4{
+    front-size: 80%;
+}
+span{
+    fornt-size: 1.5rem;
+}
+p{
+    text-align: start;
+    text-transform: uppercase;
+    text-decoration: underline overline #FF3028;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}

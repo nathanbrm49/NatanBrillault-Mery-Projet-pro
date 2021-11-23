@@ -1,0 +1,45 @@
+#conteneur{
+    display: flex;
+    background-color: gray;
+    border: 10px solid purple;
+    width: 300px;
+    height: 500px;
+    margin: 20% auto;
+    flex-direction: row;
+    /*le padding nous permettra de voir les débordements*/
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.affichageBox{
+    border: 1px solid black;
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+}
+#element1{
+    background-color: orange;
+    flex: auto;
+}
+#element2{
+    background-color: blue;
+}
+#element3{
+    background-color: green;
+}
+#element4{
+    background-color: red;
+}
+#element5{
+    background-color: pink;
+    align-self: flex-end;
+}
+.dernier {
+    order: 4;
+}
+.premier {
+    order: -2;
+}

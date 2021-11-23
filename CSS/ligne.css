@@ -1,0 +1,26 @@
+body{
+    font-family : Arial, sans-serif;
+    font-size : 16px;
+    text-align :center;
+}
+p{
+    font-size: 16px;
+}
+/*Hauteur totale de la ligne (texte + interligne) + 2 fois la hauteur du texte */
+.p1{
+    word-spacing: 0.5em;
+}
+
+.p2{
+    word-spacing: 1em;
+}
+
+.p3{
+    word-spacing: 0.1em;
+}
+
+.p4{
+    word-spacing: -1em;
+}
+
+

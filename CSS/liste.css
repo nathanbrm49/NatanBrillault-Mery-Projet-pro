@@ -1,0 +1,6 @@
+p{
+    display: list-item;
+    list-style-type: kannada; /*les marqueurs un puces seront des cercles*/
+    list-style-position: inside;/*Les marqueurs sont dans l'élément*/
+    background-color: green;
+}

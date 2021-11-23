@@ -1,0 +1,18 @@
+#grille{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+header{
+    grid-area: 1/1/1/2 ;
+}
+nav{
+    grid-area: 1/2/3 ;
+}
+@media print {
+    header{
+        display: none;
+    }
+    nav {
+        display: none;
+    }
+}

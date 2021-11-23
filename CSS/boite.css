@@ -1,0 +1,87 @@
+body{
+    font-family: Arial, sans-serif;
+}
+
+p, span{
+    font-size: 1em;
+}
+
+.d1{
+    width: 50%;
+    height: 200px;
+    border: 1px solid black;
+    overflow: scroll;
+}
+
+.d2{
+    width: 40px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+.d3{
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.d4{
+    width: 50%;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.p1{
+    background-color: lightblue;
+    width: 40px;
+    height: 10px;
+    overflow: hidden;
+}
+
+.p2{
+    background-color: lightgreen;
+    width: ;
+    height: ;
+}
+
+.p3{
+    background-color: orange;
+    width: ;
+    height: ;
+}
+
+.p4{
+    background-color: yellow;
+    width: ;
+    height: ;
+}
+
+.p5{
+    background-color: lightblue;
+    width: 200px;
+    height: 60px;
+    /*overflow: scroll;*/
+}
+
+.p6{
+    background-color: lightgreen;
+    width: 100%;
+}
+
+.p7{
+    box-sizing: border-box;
+    background-color: lightblue;
+    width: 100%;
+    height: 50px;
+    border: 10px solid purple; /*bordure violette de 10px*/
+}
+
+.p8{
+    box-sizing: border-box^m;
+    background-color: lightgreen;
+    width: 100%;
+    height: 25%;
+    padding: 20px; /*Marge interne de 20px*/
+    margin: 10px
+}
+

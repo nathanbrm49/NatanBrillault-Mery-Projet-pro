@@ -1,0 +1,20 @@
+.header 
+{
+    background-color:grey;
+    width: 80%;
+    height: 10%;
+}
+ul{
+    background-color: yellow;
+}
+.s3{
+    text-align: center;
+}
+#menu {
+    height: 90%;
+    width: 10%;
+    background-color: blue;
+}
+#conteneur{
+    display: flex;
+}

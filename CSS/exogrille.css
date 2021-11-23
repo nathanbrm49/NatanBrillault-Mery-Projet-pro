@@ -1,0 +1,51 @@
+#grille1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+}
+
+/*placement et mise en forme des éléments dans la grille*/
+#entete {
+    background-color: gray;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-size: 32px;
+}
+#navigat {
+    width: 20%;
+    height: 400px;
+    background-color: blue;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+ul{
+    background-color: yellow;
+}
+#section {
+    background-color: rgba(255, 255, 255, 0.822);
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;  
+    text-align: center;
+}
+
+.s1{
+text-align: center;
+}
+.s3{
+    text-align:center;
+    color: rgb(59, 180, 236);
+}
+.s4{
+    text-align: center;
+    border-width: 2px;
+    border-style:solid;
+    border-color:rgb(7, 241, 97);
+    border-radius: 20px;
+}
+

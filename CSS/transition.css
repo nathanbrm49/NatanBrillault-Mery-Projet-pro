@@ -1,0 +1,89 @@
+body{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    /*reset des marges*/
+    margin: 0;
+}
+p{
+    font-size: 30px;
+}
+div{
+    width: 20%;
+    height: 60px;
+    margin: 20px auto;
+    border: 2px solid black;
+    box-sizing: border-box;
+    padding: 10px;
+    transition-property: all;
+    transition-duration: 2s;
+}
+/*Etat normal*/
+#tr1{
+    background-color: orange;
+    transition-property: background-color;
+    transition-duration: 5s;
+}
+#tr1:active{
+    background-color: blue;
+}
+#tr2{
+    background-color: orange;
+    transition-property: background-color;
+    transition-duration: 5s;
+}
+#tr3{
+    background-color: orange;
+    transition-property: background-color, border;
+    transition-duration: 5s;
+}
+#tr4{
+    background-color: orange;
+    transition-property: all;
+    transition-duration: 5s;
+}
+#tr2:hover #tr3:hover #tr4:hover{
+    background-color: blue;
+    border: 5px solid red;
+    color: white;
+}
+#tr5{
+    transition-timing-function: ease;
+
+    background-color: tomato;
+}
+#tr6{
+    transition-timing-function: ease-in;
+
+    background-color: turquoise;
+}
+#tr7{
+    transition-timing-function: ease-out;
+
+    background-color: violet;
+}
+#tr8{
+    transition-timing-function: ease-in-out;
+
+    background-color: yellow;
+}
+#tr9{
+    transition-timing-function: linear;
+
+    background-color: yellowgreen;
+}
+#tr10{
+    transition-timing-function: cubic-bezier(0.6, 0, 1, 1);
+
+    background-color: red;
+}
+#tr5:hover, #tr6:hover, #tr7:hover, #tr8:hover, #tr9:hover, #tr10:hover{
+    width: 100%;
+    background-color: red;
+    transform: rotate(0.5 turn);
+    width: 100%;
+    border: 2px solid black;
+    color: coral;
+}
+
+
+
