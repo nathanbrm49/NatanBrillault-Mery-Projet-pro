@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      input:invalid {
+        border: 2px solid red;
+      }
+
+      input:valid {
+        border: 2px solid black;
+      }
+    </style>
+</head>
+
+<body>
+    <div id="div1" style="display: flex;flex-direction: column;align-items: center;">
+        <form name="formulaire" action="">
+            <div>
+                <label>Nom * </label><input type="text" style="margin:10px" onchange="controle(this)" required>
+            </div>
+            <div>
+                <label>Prénom * </label><input type="text" style="margin:10px" onchange="controle(this)" required>
+            </div>
+            <div>
+                <label>email</label><input type="email" style="margin:10px" onchange="controle(this)">
+            </div>
+            <div>
+                <label>téléphone</label><input type="tel" style="margin:10px" onchange="controle(this)">
+            </div>
+            <div>
+                <label>password</label><input type="password" style:"margin:10px" onchange="controlPwd(this)">
+            </div>
+            <div>
+                <input type="submit" value="Envoyer" style="margin:10px">
+            </div>
+        </form>
+        <p id="msgErreur"></p>
+    </div>
+    <script>
+        //fonction qui se sert des contrôles HTML5 pour mettre en avant
+        //les champs qui sont invalides
+        //elle permet également de gérer un message résumant les erreurs.
+        function controlForm() {
+            const form = document.getElementById('form1');
+            const elements = form.elements;
+            let nbElementsRequired = 0;
+            let nbElementsPattern = 0;
+            for(let element of elements) {
+                
+                const isValid = element.validity.valid;
+                
+                if (element.hasAttribute('required') && element.value.trim() == "") {
+                    nbElementsRequired +=1;
+                    element.style.borderColor = 'red';
+                    element.style.borderStyle = 'solid';
+
+                }
+                if (element.hasAttribute('pattern') && !isValid) {
+                   nbElementsPattern +=1;
+                    element.style.borderColor = 'red';
+                    element.style.borderStyle = 'solid';
+                }
+
+            }
+            if(nbElementsRequired > 0) {
+
+            }
+        }
+        function control(element) {
+
+        }
+function controlPwd(elemPwd) {
+            const pwd = String(elemPwd.value);
+            if (!pwd.match(/[0-9]/g) ||
+                !pwd.match(/[A-Z]/g) ||
+                !pwd.match(/[a-z]/g) ||
+                !pwd.match(/[^a-zA-Z\d]/g) ||
+                pwd.length < 12) {
+                    //mot de passe invalide
+                    elemPwd.validity.valid = "false";
+                    //info bulle sur le type d'erreur
+                    elemPwd.setCustomValidity("Votre mot de passe doit comporter au moins une majuscule, minuscule, chiffre et signe de ponctuation");
+                } else {
+                    //nettoyage de l'invalidité de la zone
+                    elemPwd.validity.valid = "true";
+                    elemPwd.setCustomValidity("");
+                }
+        }
+    </script>
+</body>
+
+</html>

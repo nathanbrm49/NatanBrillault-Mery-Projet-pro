@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Bouton Bootstrap</title>
+</head>
+
+<body>
+    <p class="lead bg-dark text-white text-center p-3">couleur des boutons</p>
+    <div class="container">
+        <button type="button" class="btn btn-primary mb-2">Primary</button>
+        <button type="button" class="btn btn-secondary mb-2">Secondary</button>
+        <button type="button" class="btn btn-success mb-2">Success</button>
+        <button type="button" class="btn btn-danger mb-2">Danger</button>
+        <button type="button" class="btn btn-warning mb-2">Warning</button>
+        <button type="button" class="btn btn-info mb-2">Info</button>
+        <button type="button" class="btn btn-light mb-2">Light</button>
+        <button type="button" class="btn btn-dark mb-2">Dark</button>
+        <button type="button" class="btn btn-link mb-2">Lien</button>
+    </div>
+    <p class="lead bg-dark text-white text-center p-3">bordure des boutons</p>
+    <div class="container">
+        <h1>Boutons</h1>
+        <button type="button" class="btn btn-outline-primary mb-2">Primary</button>
+        <button type="button" class="btn btn-outline-secondary mb-2">Secondary</button>
+        <button type="button" class="btn btn-outline-success mb-2">Success</button>
+        <button type="button" class="btn btn-outline-danger mb-2">Danger</button>
+        <button type="button" class="btn btn-outline-warning mb-2">Warning</button>
+        <button type="button" class="btn btn-outline-info mb-2">Info</button>
+        <button type="button" class="btn btn-outline-light mb-2">Light</button>
+        <button type="button" class="btn btn-outline-dark mb-2">Dark</button>
+    </div>
+    <p class="lead bg-dark text-white text-center p-3">taille des boutons</p>
+    <div class="container">
+        <h1>Boutons</h1>
+        <button type="button" class="btn btn-primary btn-lg mb-2">Gros bouton</button>
+        <button type="button" class="btn btn-outline-primary btn-lg mb-2">Gros bouton</button>
+
+        <button type="button" class="btn btn-success btn-sm mb-2">Petit bouton</button>
+        <button type="button" class="btn btn-outline-success btn-sm mb-2">Petit bouton</button>
+        <br><br>
+        <button type="button" class="btn btn-warning btn-lg btn-block">Bouton de type block</button>
+        <button type="button" class="btn btn-outline-warning btn-lg btn-block">Bouton de type block</button>
+    </div>
+    <p class="lead bg-dark text-white text-center p-3">groupe de bouton</p>
+    <div class="container">
+        <div class="btn-group" role="group" aria-label="Un groupe de boutons">
+            <button type="button" class="btn btn-secondary">Gauche</button>
+            <button type="button" class="btn btn-secondary">Milieu</button>
+            <button type="button" class="btn btn-secondary">Droite</button>
+        </div>
+    </div>
+    <p class="lead bg-dark text-white text-center p-3">imbrication de groupes de boutons et menu</p>
+    <div class="container">
+        <div class="btn-group" role="group" aria-label="Groupe de boutons avec menu intégré">
+            <button type="button" class="btn btn-secondary">Bouton n°1</button>
+            <button type="button" class="btn btn-secondary">Bouton n°2</button>
+
+            <div class="btn-group" role="group" aria-label="Menu déroulant">
+                <button id="menuDeroulant" type="button" class="btn btn-secondary dropdown-toggle"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu déroulant</button>
+
+                <div class="dropdown-menu" aria-labelledby="menuDeroulant">
+                    <a class="dropdown-item" href="#">Lien n°1</a>
+                    <a class="dropdown-item" href="#">Lien n°2</a>
+                    <a class="dropdown-item" href="#">Lien n°3</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+</body>
+
+</html>

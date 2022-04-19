@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+​
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Mise en forme des textes BS</title>
+</head>
+​
+<body>
+    <p class="lead bg-info">mise en forme avec les classes display- de BS</p>
+    <div class="container">
+        <h2>Test sans classe display-*</h2>
+        <h2 class="display-1">h2 .display-1</h2>
+        <h2 class="display-2">h2 .display-2</h2>
+        <h2 class="display-3">h2 .display-3</h2>
+        <h2 class="display-4">h2 .display-4</h2>
+    </div>
+    <p class="lead bg-info">mise en forme de texte comme des titres</p>
+    <p class="h1">Un paragraphe stylisé comme un titre h1</p>
+    <p class="h2">Un paragraphe stylisé comme un titre h2</p>
+​
+    <p class="lead bg-info">modification du poids de la police</p>
+    <div class="container">
+        <p class="font-weight-bold">Texte en gras</p>
+        <p class="font-weight-normal">Texte normal</p>
+        <p class="font-weight-light">Poids de police plus léger</p>
+        <p class="font-italic">Texte en italique</p>
+    </div>
+    <p class="lead bg-info">modification de la casse</p>
+    <div class="container">
+        <p class="text-lowercase">Texte en minuscules</p>
+        <p class="text-uppercase">Texte en majuscules</p>
+        <p class="text-capitalize">premiERE lettre DE chaque MOT transformée pour apparaitre en MAJuscules</p>
+    </div>
+    <p class="lead bg-info">alignement du text dans son élément parent</p>
+    <div class="container">
+        <p class="text-justify">Texte justifié (lorep ipsum) : Solitudines per absque metu descivere effectu metu regionem descivere effectu diebus parans herbidas ullo herbidas amnis tabescebat dux invadere admissi proditus deinde regionem celebritati solitudines ullo absque immobilis Aboraeque diebus edictus suorum Romana celebritati ad herbidas ripas ad ripas dux ad Romana herbidas dux effectu diebus ullo edictus invadere deinde.</p>
+        <br>
+        <p class="text-left">Texte aligné à gauche pour toutes les tailles de fenêtre</p>
+        <p class="text-center">Texte centré à gauche pour toutes les tailles de fenêtre</p>
+        <p class="text-right">Texte aligné à droite pour toutes les tailles de fenêtre</p>
+        <br>
+        <p class="text-sm-left">Texte aligné à gauche pour les petites fenêtres (>576px) et au delà</p>
+        <p class="text-md-center">Texte centré pour les fenêtres de taille moyenne (>768px) et au delà </p>
+        <p class="text-lg-right">Texte aligné à droite pour les grandes tailles de fenêtre (>992px) et au delà</p>
+        <p class="text-sm-left text-xl-right">Texte aligné à gauche pour les petites fenêtres (>576px) et au delà
+          <br>puis aligné à droite dès que la fenêtre atteint 1200px</p>
+      </div>
+      <p class="lead bg-warning p-3">couleur et opacité des textes</p>
+    <!--bg-dark pour changer la couleur de fond de l'élément afin que la couleur
+    de police puisse ressortir-->
+    <div class="container">
+        <p class="text-primary">.text-primary</p>
+        <p class="text-secondary">.text-secondary</p>
+        <p class="text-success">.text-success</p>
+        <p class="text-danger">.text-danger</p>
+        <p class="text-warning">.text-warning</p>
+        <p class="text-info">.text-info</p>
+        <p class="text-light bg-dark">.text-light</p>
+        <p class="text-dark">.text-dark</p>
+        <p class="text-body">.text-body</p>
+        <p class="text-muted">.text-muted</p>
+        <p class="text-white bg-dark">.text-white</p>
+        <p class="text-black-50">.text-black-50</p>
+        <p class="text-white-50 bg-dark">.text-white-50</p>
+    </div>
+    <p class="lead bg-warning p-3">couleur de fond</p>
+    <!--classe identique pour les couleurs de fond d'éléments-->
+    <div class="container">
+        <!--Les classes .p-3 et .mb-2 servent simplement à définir un 
+        padding et une marge extérieure basse pour séparer nos divs.
+        La classe border permet d'ajouter des bordures-->
+        <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
+        <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
+        <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
+        <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
+        <div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
+        <div class="p-3 mb-2 bg-info text-white">.bg-info</div>
+        <div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
+        <div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
+        <div class="p-3 mb-2 bg-white text-dark border">.bg-white</div>
+        <div class="p-3 mb-2 bg-transparent text-dark border">.bg-transparent</div>
+        <div class="p-3 mb-2"><a class="bg-primary text-white" href="#">.bg-primary (lien)</a></div>
+    </div>
+    <p class="lead bg-warning p-3">modifier la taille d'un élément</p>
+    <div class="container">
+        <p class="w-25 bg-info mt-2 p-2">w-25</p>
+        <p class="w-50 bg-info mt-2 p-2">w-50</p>
+        <p class="w-75 bg-info mt-2 p-2">w-75</p>
+        <p class="w-100 bg-info mt-2 p-2">w-100</p>
+        <p class="w-auto bg-info mt-2 p-2">w-auto</p>
+    </div>
+    <p class="lead bg-warning p-3">définir la taille par rapport au viewport</p>
+    <div class="container">
+        <p class="w-100 bg-info mt-2 p-2">w-100</p>
+        <p class="vw-100 bg-info mt-2 p-2">vw-100</p>
+        <p class="min-vw-100 bg-info mt-2 p-2">min-vw-100</p>
+    </div>
+    <p class="lead bg-primary p-3">définir les bordures</p>
+    <div class="container">
+        <p class="bg-light border mt-2">.border</p>
+        <p class="bg-light border-top">.border-top</p>
+        <p class="bg-light border-right">.border-right</p>
+        <p class="bg-light border-bottom">.border-bottom</p>
+        <p class="bg-light border-left">.border-left</p>
+    </div>
+    <p class="lead bg-primary p-3">supprimer des bordures</p>
+    <div class="container">
+        <p class="bg-light border border-0">.border .border-0</p>
+        <p class="bg-light border border-top-0">.border .border-top-0</p>
+        <p class="bg-light border border-right-0">.border .border-right-0</p>
+        <p class="bg-light border border-bottom-0">.border .border-bottom-0</p>
+        <p class="bg-light border border-left-0">.border .border-left-0</p>
+    </div>
+    <p class="lead bg-primary p-3">créer une bordure de couleur</p>
+    <!--attention les classe border-couleur ne créent pas de bordure-->
+    <div class="container">
+        <p class="bg-light border border-primary">.border .border-primary</p>
+        <p class="bg-light border border-secondary">.border .border-secondary</p>
+        <p class="bg-light border border-success">.border .border-success</p>
+        <p class="bg-light border border-danger">.border .border-danger</p>
+        <p class="bg-light border border-warning">.border .border-warning</p>
+        <p class="bg-light border border-info">.border .border-info</p>
+        <p class="bg-light border border-dark">.border .border-dark</p>
+    </div>
+    <div class="container-fluid bg-dark pt-2 pb-2">
+        <p class="text-white border border-light">.border .border-light</p>
+        <p class="text-white border border-white">.border .border-white</p>
+    </div>
+    
+    <p class="lead bg-primary p-3">créer des bords arrondis</p>
+    <div class="container mt-2">
+        <p class="text-white bg-dark p-2 rounded">.border .rounded</p>
+        <p class="text-white bg-dark p-2 rounded-top">.border .rounded-top</p>
+        <p class="text-white bg-dark p-2 rounded-right">.border .rounded-right</p>
+        <p class="text-white bg-dark p-2 rounded-bottom">.border .rounded-bottom</p>
+        <p class="text-white bg-dark p-2 rounded-left">.border .rounded-left</p>
+        <p class="text-white bg-dark p-2 rounded-circle">.border .rounded-circle</p>
+        <p class="text-white bg-dark p-2 rounded-pill">.border .rounded-pill</p>
+        <p class="text-white bg-dark p-2 rounded rounded-0">.border .rounded-0</p>
+    </div>
+    <p class="lead bg-secondary p-3">exemple de définition de marges</p>
+    <div class="container mt-2">
+        <p class="text-white bg-dark rounded">Pas de marge</p>
+        <p class="text-white bg-dark pl-3 rounded">padding-left: 1rem</p>
+        <p class="text-white bg-dark ml-3 rounded">margin-left: 1rem</p>
+        <p class="text-white bg-dark pl-3 ml-3 rounded">padding-left: 1rem et margin-left: 1rem</p>
+        <p class="text-white bg-dark p-2 rounded">padding: 0.5rem</p>
+    </div>
+    <p class="lead bg-secondary p-3">centrage d'élément</p>
+    <!--attention un élément centré ne va pas centré son contenu, il le mettra par défaut à gauche-->
+    <div class="container bg-dark">
+        <div class="mx-auto bg-warning w-75">
+          <p class="py-2">Element div centré dans notre conteneur</p>
+        </div>
+        <p class="mx-auto p-4 bg-light w-75">Element p centré dans notre conteneur</p>
+    
+        <div class="mx-auto bg-info w-75">
+            <p class="mx-auto py-4 bg-success w-75">Element p centré dans un div lui même centré dans notre conteneur</p>
+        </div>
+    </div>
+    <p class="lead text-light bg-dark p-1">changer la position d'un élément</p>
+    <div class="container">
+        <div class="position-static">Position : static</div>
+        <div class="position-relative" style="left: 50px">Position :  relative</div>
+        <div class="position-absolute" style="right: 0px">Position : absolute</div>
+        <div class="position-fixed" style="right: 0px; bottom: 0px">Position : fixed</div>
+        
+        <div class="position-relative" style="height: 500px">
+            <div class="position-sticky" style="top : 0px">Position : sticky</div>
+        </div>
+    </div>
+    <p class="lead text-light bg-dark p-1">fixer en haut ou bas un élément</p>
+    <div class="container" style="height: 600px">
+        <div class="fixed-top">fixed-top</div>
+        <div class="fixed-bottom">fixed-bottom</div>
+    </div>
+    <p class="lead text-light bg-dark p-1">sticky-top</p>
+    <div class="container" style="height: 600px">
+        <p>Un paragraphe</p>
+        <div class="sticky-top">sticky-top</div>
+    </div>
+​
+</body>
+​
+</html>

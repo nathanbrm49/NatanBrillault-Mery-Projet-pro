@@ -16,3 +16,19 @@ nav{
         display: none;
     }
 }
+body {
+    color:black;
+    background-color:rgb(148, 144, 144);
+    margin:0;
+    }
+#entete{
+    background: url(https://live.staticflickr.com/1656/26031883676_182191d803_b.jpg);
+    background-size: cover;
+    background-color: #58AFF6;
+    top: 0;
+    height: 10vw;
+    width: 100vw;
+}
+#menu{
+    list-style-type: none;
+}
